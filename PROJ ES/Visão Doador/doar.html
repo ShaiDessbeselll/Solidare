@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solidare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Paytone+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="doar.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img class=logo src="img/Logo.png" alt="Logo Solidare">
+            <p>Solidare</p>
+            <ul>
+                <li><a href="inicio.html"><img src="img/Home.png">Inicio</a></li>             
+                <li><a href="dashboard.html"><img src="img/Dashboard.png">Dashboard</a></li>
+                <div class="nav-ativo">
+                    <li><a href="doar.html"><img src="img/Heart.png">Doar</a></li>
+                </div>
+                    <li><a href="ongs.html"><img src="img/Ong.png">Ongs</a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <div class="cabecalho">
+        <div class="titulo">
+                <h1>Suas Doações</h1>
+                <p>Bem-vindo(a) á seção de doações onde você pode visualizar o que já doou</p>
+        </div>  
+        <div class="novo">
+            <button>+ Nova doação</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="topo">
+            <div class="produtos">
+                    <div class="escrita">
+                        <h4>Total de produtos doados</h4>
+                        <h2>160</h2>
+                    </div>
+                    <div class="produtos-icone">
+                        <img src="img/box.png" alt="Ícone de produtos">
+                    </div>
+            </div>
+            <div class="itens">
+                <div class="escrita">
+                    <h4>Valor doado</h4>
+                    <h2>R$ 5.250,02</h2>
+                </div>
+                <div class="itens-icone">
+                    <img src="img/Alert.png">
+                </div>
+            </div>
+                        <div class="ongs">
+                <div class="escrita">
+                    <h4>ONGs beneficiadas</h4>
+                    <h2>15</h2>
+                </div>
+                <div class="ongs-icone">
+                    <img src="img/ongs.png">
+                </div>
+
+            </div>
+        </div>
+        <div class="produto">
+            <div class="produto-titulo">
+                <h2>Produtos cadastrados</h2>
+            </div>
+            <div class="lista">
+                <table class="tabela-produtos">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade em estoque</th>
+                <th>Data de registro</th>
+                <th>Ponto de coleta</th>
+                <th>Descrição</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>Roupas Masculinas</td>
+            <td>45</td>
+            <td>10/11/2025</td>
+            <td>Ponto Central</td>
+            <td>Roupas variadas, tamanhos M e G</td>
+            <td class="acoes">
+                <button class="btn-editar" title="Editar">
+                    <img src="img/editar.png">
+                </button>
+                <button class="btn-remover" title="Remover">
+                    <img src="img/lixeira.png">
+                </button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Brinquedos</td>
+            <td>18</td>
+            <td>05/11/2025</td>
+            <td>Bairro Sul</td>
+            <td>Brinquedos infantis em bom estado</td>
+            <td class="acoes">
+                <button class="btn-editar" title="Editar">
+                    <img src="img/editar.png">
+                </button>
+                <button class="btn-remover" title="Remover">
+                    <img src="img/lixeira.png">
+                </button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Cestas Básicas</td>
+            <td>32</td>
+            <td>12/11/2025</td>
+            <td>Posto Solidário</td>
+            <td>Itens alimentícios diversos</td>
+            <td class="acoes">
+                <button class="btn-editar" title="Editar">
+                   <img src="img/editar.png">
+                </button>
+                <button class="btn-remover" title="Remover">
+                    <img src="img/lixeira.png">
+                </button>
+            </td>
+        </tr>
+    </tbody>
+
+    </table>
+            </div>
+        </div>
+    </div>
+</body>

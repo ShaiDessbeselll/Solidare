@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <input type="text" id="user" placeholder="Usuário" />
+        <input type="password" id="pass" placeholder="Senha" />
+            <button>Entrar</button>
+        </a>
+       
+
+        <button class="google-btn" onclick="loginGoogle()">
+            <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" width="20" /> Login com Google
+        </button>
+
+        <div class="divider"><p>Criar conta</p></div>
+
+        <div class="roles">
+            <a href="/Visão ONG/inicio.html">
+                <button class="role-btn" onclick="souONG()">Sou ONG</button>
+            </a>
+            <a href="/Visão Doador/inicio.html">
+                <button class="role-btn" onclick="souDoador()">Sou doador</button>
+            </a>
+        </div>
+
+        <p class="message" id="msg">Usuário ou senha incorretos!</p>
+    </div>
+
+    <script>
+        function login() {
+            const user = document.getElementById('user').value;
+            const pass = document.getElementById('pass').value;
+            const msg = document.getElementById('msg');
+
+            if (user === "admin" && pass === "123") {
+                alert("Login realizado com sucesso!");
+            } else {
+                msg.style.display = 'block';
+            }
+        }
+        function loginGoogle() {
+            alert('Login com Google (simulação)');
+        }
+        function souONG() {
+            alert('Cadastro para ONG');
+        }
+        function souDoador() {
+            alert('Cadastro para doador');
+        }
+    </script>
+</body>
+</html>
